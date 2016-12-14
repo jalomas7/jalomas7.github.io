@@ -6,8 +6,8 @@ body {
 .header_container {
     text-align: center;
     display: inline-block;
-    position: fixed;
     left: 15px;
+    position: relative;
     margin: 0px;
     float: center;
 }
@@ -18,22 +18,23 @@ body {
     float: left;
     left: 0;
     top: 0;
-    height: 100%;
-    width: 2%;
+    height: 20px;
+    width: 1.5em;
     overflow: hidden;
     color: white;
     margin: 0px;
     padding: 0px;
     background-color: #81A594;
     text-align: right;
-    -webkit-transition: width 0.3s;
-    transition: width 0.5s;
+    -webkit-transition: width 0.3s, height 0.1s, left 0.3s;
+    transition: width 0.5s, height 0.1s, left 0.3s;
 }
 
 #nav_open {
     position: relative;
     border: none;
     background-color: #81A594;
+    font-size: 16px;
 }
 
 .nav_list {
