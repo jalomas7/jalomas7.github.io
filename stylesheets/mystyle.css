@@ -7,7 +7,6 @@ body {
 .header_container {
     text-align: center;
     display: inline-block;
-    left: 15px;
     position: relative;
     margin: 0px;
     float: center;
@@ -29,6 +28,7 @@ body {
     text-align: right;
     -webkit-transition: width 0.5s, height 0.2s;
     transition: width 0.5s, height 0.2s;
+    z-index: 1;
 }
 
 #nav_open {
@@ -56,4 +56,11 @@ body {
 .nav_list a {
     text-decoration: none;
     color: white;
+}
+
+.main_content {
+    position: relative;
+    left: 5%;
+    width: 45em;
+    font-size: 24px;
 }

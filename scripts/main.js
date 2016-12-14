@@ -1,4 +1,9 @@
-nav_open = false;
+var nav_open;
+if($.cookie("nav_open") in window){
+   nav_open = $.cookie("nav_open");
+}else{
+    nav_open = false;
+}
 function show_nav(){
     var nav = document.getElementsByClassName("nav")[0];
     if(nav_open){
@@ -10,4 +15,6 @@ function show_nav(){
         nav.style.height= "100%";
         nav_open = true;
     }
+
+    $.cookie("nav_open", nav_open);
 }
