@@ -9,6 +9,7 @@ body {
     position: relative;
     margin: 0px;
     float: center;
+    z-index: 0.5;
 }
 
 .nav {
