@@ -1,4 +1,51 @@
 body {
-    background-color: powderblue;
+    background-color: #e6e6dc;
+    color: #00628b;
 }
 
+.header_container {
+    text-align: center;
+    display: inline-block;
+    position: fixed;
+    left: 15px;
+    margin: 0px;
+    float: center;
+}
+
+.nav {
+    display: inline-block;
+    position: fixed;
+    float: left;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2%;
+    overflow: hidden;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    background-color: #81A594;
+    text-align: right;
+    -webkit-transition: width 0.3s;
+    transition: width 0.5s;
+}
+
+#nav_open {
+    position: relative;
+    border: none;
+    background-color: #81A594;
+}
+
+.nav_list {
+    list-style: none;
+    padding: 5px;
+}
+
+.nav_list li {
+    -webkit-transition: background-color: .5s;
+    transition: background-color .5s;
+}
+
+.nav_list li:hover {
+    background-color: #698678;
+}
