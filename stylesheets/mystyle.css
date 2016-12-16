@@ -48,11 +48,11 @@ body {
 }
 
 .nav_list li.active {
-    background-color: #698878;
+    background-color: #698278;
 }
 
 .nav_list li:hover {
-    background-color: #698678;
+    background-color: #698f78;
 }
 
 .nav_list a {
