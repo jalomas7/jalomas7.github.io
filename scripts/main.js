@@ -1,3 +1,4 @@
+//sets the nav state as open or closed. persistent on page reload
 function show_nav(toggle){
     var nav = document.getElementsByClassName("nav")[0];
     var nav_open = localStorage.getItem("nav_open");

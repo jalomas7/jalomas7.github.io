@@ -47,6 +47,10 @@ body {
     transition: background-color .5s;
 }
 
+.nav_list li.active {
+    background-color: #698878;
+}
+
 .nav_list li:hover {
     background-color: #698678;
 }
