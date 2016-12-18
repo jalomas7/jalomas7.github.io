@@ -1,6 +1,6 @@
 body {
-    background-color: #e6e6dc;
-    color: #00628b;
+    background-color: #2c4762;
+    color: white;
     font-family: Verdana, Arial, sans-serif;
 }
 
@@ -27,6 +27,9 @@ br {
     margin: 0px;
     padding: 0px;
     background-color: #81A594;
+    background-image: url("../img/dark-wood2.jpg");
+    background-repeat: repeat-x;
+    background-size: cover;
     text-align: right;
     -webkit-transition: width 0.5s, height 0.2s;
     transition: width 0.5s, height 0.2s;
