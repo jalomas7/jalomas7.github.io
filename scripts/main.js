@@ -5,8 +5,8 @@ function show_nav(toggle){
     var nav_open = localStorage.getItem("nav_open");
     console.log(nav_open); 
     if(nav_open == "1" ^ toggle){
-        nav.style.width = "1.5em";
-        nav.style.height= "20px";
+        nav.style.width = "1.7em";
+        nav.style.height= "25px";
         content.style.left = "5%";
     }else{
         nav.style.width = "15%";
