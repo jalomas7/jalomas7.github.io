@@ -6,13 +6,21 @@
   <title>Jacob Massengill</title> 
 </head>
   
-<body onload="show_nav(false)">
+<body onload="show_nav()">
     <div class="nav">
-    <button id="nav_open" onclick="show_nav(true)">&#9776</button>
+    <button id="nav_open" onclick="show_nav()">&#9776</button>
         <ul class="nav_list">
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
+            <li> <div class="sublist">
+                <a href="about.html">About</a>
+                <div class="sublist_content">
+                    <ul id="about_list">
+                        <li><a href="about.html">Me</a></li>
+                        <li><a href="about.html">The Site</a></li>
+                    </ul>
+                </div>
+            </div> </li>
             <li><a href="my_work.html">My Work</a></li>
         </ul>
     </div>
