@@ -33,21 +33,21 @@ br {
     background-size: cover;
     text-align: right;
     z-index: 1;
-    box-shadow: 0px 0px 2px 1px #202b35;
     -webkit-transition: width 0.5s, height 0.4s;
     transition: width 0.5s, height 0.4s;
 }
 
 #nav_open {
-    position: relative;
     border: none;
     background-color: #2c4762;
-    font-size: 24px;
+    font-size: 28px;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
 }
 
 .nav_list {
     list-style: none;
-    padding: 5px;
+    padding: 0px;
 }
 
 .nav_list li {
@@ -71,47 +71,45 @@ br {
 }
 
 .sublist {
-    width: 100%;
-    display: inline-block;
+    display: inline;
 }
 
 .sublist_content {
-    background-color: white;
+    background-color: rgb(220,220,220);
+    float: left;
     opacity: 0.0;
-    text-align: left;
+    width: 100%;
+    text-align: center;
     border-radius: 5px;
-    position: relative;
+    position: absolute;
     list-style: none;
     display: none;
     float: left;
-    width: auto;
     height: auto;
     font-size: 18px;
-    -webkit-transition: opacity 0.3s;
-    transition: opacity 0.3s;
     z-index: 1;
 }
 
 .sublist_content ul {
     list-style: none;
+    padding-left: 0px;
 }
 
 .sublist:hover .sublist_content {
     display: inline-block;
-    position: absolute;
-    opacity: 0.85;
+    opacity: 0.95;
     color: black;
     animation: fadeIn 1s;
 }
 
 .sublist li a {
     color: black;
+    position: relative;
 }
 
 .main_content {
     z-index: 0.5;
     position: relative;
-    left: 5%;
     width: 45em;
     font-size: 24px;
     -webkit-transition: left 0.5s;
@@ -122,11 +120,11 @@ br {
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
     from {opacity: 0;} 
-    to {opacity: 0.85;}
+    to {opacity: 0.95;}
 }
 
 @keyframes fadeIn {
     from {opacity: 0;}
-    to {opacity:0.85;}
+    to {opacity:0.95;}
 }
 
