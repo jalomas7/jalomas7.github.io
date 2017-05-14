@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="stylesheets/mystyle.css">
+        <script src="scripts/main.js"></script>
+        <title>This Site</title> 
+    </head>
+    <body onload="show_nav()">
+        <div class="nav">
+            <button id="nav_open" onclick="show_nav()">&#9776</button>
+            <ul class="nav_list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="active"> <div class="sublist">
+                        <a href="about.html">About</a>
+                        <div class="sublist_content">
+                            <ul id="about_list">
+                                <li><a href="about.html">Me</a></li>
+                                <li class="active"><a href="the_site.html">The Site</a></li>
+                            </ul>
+                        </div>
+                    </div> </li>
+                    <li><a href="my_work.html">My Work</a></li>
+            </ul>
+        </div>
+        <div class="main_content">
+            <div class="header_container">
+                <h1>About This Site</h1>
+            </div><br/>
+            <p>I built this place entirely from scratch
+            using HTML, CSS, and Javascript.<br/> Here, you
+            can see my story and work, as well as contact me and in general see what 
+            kind of designs I can create.<br/>
+            This site is very much a work in progress right now, so you may see some
+            goofy stuff going on, but that is perfectly fine. 
+            <br/>
+            I believe strongly that good design can be achieved without using
+            bulky frameworks like wordpress. I don't doubt they can be highly
+            useful, but I prefer to not use them. 
+        </div>
+    </body>
+</html>
