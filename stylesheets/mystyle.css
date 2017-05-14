@@ -54,6 +54,7 @@ br {
     font-size: 24px;
     -webkit-transition: background-color .5s;
     transition: background-color .5s;
+    display: block;
 }
 
 .nav_list li.active {
@@ -70,17 +71,25 @@ br {
 }
 
 .sublist {
-    position: inline;
+    width: 100%;
+    display: inline-block;
 }
 
-
 .sublist_content {
+    background-color: white;
+    opacity: 0.0;
+    text-align: left;
+    border-radius: 5px;
+    position: relative;
     list-style: none;
     display: none;
-    height: 100%;
+    float: left;
+    width: auto;
+    height: auto;
     font-size: 18px;
-    -webkit-transition: height 0.3s;
-    transition: height 0.3s;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    z-index: 1;
 }
 
 .sublist_content ul {
@@ -88,7 +97,15 @@ br {
 }
 
 .sublist:hover .sublist_content {
-    display: block;
+    display: inline-block;
+    position: absolute;
+    opacity: 0.85;
+    color: black;
+    animation: fadeIn 1s;
+}
+
+.sublist li a {
+    color: black;
 }
 
 .main_content {
@@ -100,3 +117,16 @@ br {
     -webkit-transition: left 0.5s;
     transition: left 0.5s;
 }
+
+/* keyframes animations */
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 0.85;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:0.85;}
+}
+

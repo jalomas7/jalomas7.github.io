@@ -7,10 +7,12 @@ function show_nav(){
         nav.style.width = "1.9em";
         nav.style.height= "30px";
         content.style.left = "5%";
+        nav.style.overflow = "hidden";
     }else{
         nav.style.width = "15%";
         nav.style.height= "100%";
         content.style.left = "15%";
+        nav.style.overflow = "visible";
     }
     nav_open ^= 1;
 }
