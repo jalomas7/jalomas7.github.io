@@ -45,6 +45,11 @@ br {
     transition: color 0.3s;
 }
 
+#nav_open:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+
 .nav_list {
     list-style: none;
     padding: 0px;
