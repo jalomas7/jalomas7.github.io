@@ -125,6 +125,11 @@ br {
     transition: left 0.5s;
 }
 
+.framed_picture {
+    border: 15px solid white;
+    box-shadow: 0px 8px 15px black;
+}
+
 /* keyframes animations */
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
@@ -137,3 +142,12 @@ br {
     to {opacity:0.95;}
 }
 
+@-webkit-keyframes fadeOut {
+    to {opacity: 0;} 
+    from {opacity: 0.95;}
+}
+
+@keyframes fadeOut {
+    to {opacity: 0;}
+    from {opacity:0.95;}
+}
