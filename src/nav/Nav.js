@@ -1,5 +1,6 @@
 import React from 'react';
 import NavButton from './NavButton.js';
+import {Link} from 'react-router-dom';
 import './Nav.css';
 
 class Nav extends React.Component {
@@ -9,15 +10,15 @@ class Nav extends React.Component {
           <NavButton/>
           <div className="nav">
               <ul className="nav_list">
-                  <li className="active"><a href="index.html">Home</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+                  <li className="active"><Link to='/'>Home</Link></li>
+                  <li><Link to="/contact">Contact</Link></li>
                   <li>
                     <div className="sublist">
-                        <a href="about.html">About</a>
+                        <Link to='/about'>About</Link>
                         <div className="sublist_content">
                             <ul id="about_list">
-                                <li><a href="about.html">Me</a></li>
-                                <li><a href="the_site.html">The Site</a></li>
+                                <li><Link to="/about">Me</Link></li>
+                                <li><Link to="/the-site">The Site</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -27,15 +28,9 @@ class Nav extends React.Component {
                       My Work
                       <div className="sublist_content">
                           <ul id="work_list">
-                              <li> <a
-                              href="http://web.eecs.utk.edu/~jmasse10/9n2Bj1p4/finalp/" target="_blank">
-                                      WebGL Beach </a> </li>
-                              <li> <a
-                              href="https://github.com/jalomas7" target="_blank">
-                                       GitHub Repos </a> </li>
-                              <li> <a
-                              href="http://web.eecs.utk.edu/~jmasse10/" target="_blank">
-                                       UTK EECS Site</a> </li>
+                              <li> <a href="http://web.eecs.utk.edu/~jmasse10/9n2Bj1p4/finalp/" target="_blank"> WebGL Beach </a> </li>
+                              <li> <a href="https://github.com/jalomas7" target="_blank"> GitHub Repos </a> </li>
+                              <li> <a href="http://web.eecs.utk.edu/~jmasse10/" target="_blank"> UTK EECS Site</a> </li>
                           </ul>
                       </div>
                     </div>

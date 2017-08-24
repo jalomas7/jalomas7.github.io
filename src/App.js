@@ -1,6 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import {Switch} from 'react-router';
+import { Switch, BrowserRouter as Router, Route } from 'react-router-dom';
 import Welcome from './content/Welcome.js';
 import About from './content/About.js';
 import Nav from './nav/Nav.js';
@@ -8,15 +7,15 @@ import Nav from './nav/Nav.js';
 class App extends React.Component {
   render() {
     return(
+      <Router>
       <div className="container">
         <Nav/>
-        <Router>
           <Switch>
-          <Route exact path='/' component={Welcome} />
-          <Route path='/about' component={About} />
+            <Route exact path='/' component={Welcome} />
+            <Route path='/about' component={About} />
           </Switch>
-        </Router>
       </div>
+      </Router>
     );
   }
 }
