@@ -4,11 +4,22 @@ import {Link} from 'react-router-dom';
 import './Nav.css';
 
 class Nav extends React.Component {
+
+  navOpened = false;
+
+  toggleNav() {
+      this.navOpened = !this.navOpened;
+      return this.navOpened
+  }
+
   render() {
+
     return (
         <div className="nav_container">
-          <NavButton/>
           <div className="nav">
+            <div className="nav_button_wrapper" onClick={this.toggleNav.bind(this)}>
+              <NavButton/>
+            </div>
               <ul className="nav_list">
                   <li className="active"><Link to='/'>Home</Link></li>
                   <li><Link to="/contact">Contact</Link></li>
