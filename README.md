@@ -1,1 +1,0 @@
-# jalomas7.github.io
