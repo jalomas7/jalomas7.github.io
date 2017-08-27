@@ -7,9 +7,18 @@
 
 .menu_button_top, .menu_button_center {
   margin-bottom: 5px;
+  top: 0;
 }
 
 .menu_button_container {
   float: right;
+  border: none;
+  background-color: transparent;
+  font-size: 28px;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
 
+.menu_button_container:hover {
+    cursor: hand;
 }

@@ -5,21 +5,39 @@ import './Nav.css';
 
 class Nav extends React.Component {
 
-  navOpened = false;
+  constructor(props){
+    super(props);
+
+    this.state =
+      {
+        navOpened: false,
+        navWidth: '0px',
+        navButtonOffset: '0px'
+      };
+
+    this.toggleNav = this.toggleNav.bind(this);
+  }
 
   toggleNav() {
-      this.navOpened = !this.navOpened;
-      return this.navOpened
+      this.setState({navOpened: !this.state.navOpened});
+
+      if(this.state.navOpened){
+        this.setState({navWidth: '0px', navButtonOffset: '0px'});
+      } else {
+        this.setState({navWidth: '250px', navButtonOffset: '222px'});
+      }
+
+      return this.state.navOpened;
   }
 
   render() {
 
     return (
         <div className="nav_container">
-          <div className="nav">
-            <div className="nav_button_wrapper" onClick={this.toggleNav.bind(this)}>
+            <div className="nav_button_wrapper" onClick={this.toggleNav} style={{left:this.state.navButtonOffset}}>
               <NavButton/>
             </div>
+          <div className="nav" style={{width: this.state.navWidth, overflow: this.state.navOpened ? 'visible': 'hidden'}}>
               <ul className="nav_list">
                   <li className="active"><Link to='/'>Home</Link></li>
                   <li><Link to="/contact">Contact</Link></li>
