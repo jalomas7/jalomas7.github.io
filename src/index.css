@@ -1,3 +1,6 @@
+.app_container {
+}
+
 body {
     background-color: #2c4762;
     background-image: url("./img/brushed.png");
@@ -16,8 +19,7 @@ br {
 }
 
 .main_content {
-    width: 45em;
-    left: 500px;
+  float: left;
     font-size: 24px;
     -webkit-transition: left 0.5s;
     transition: left 0.5s;

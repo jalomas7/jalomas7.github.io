@@ -11,7 +11,7 @@ class Nav extends React.Component {
     this.state =
       {
         navOpened: false,
-        navWidth: '0px',
+        navWidth: '0%',
         navButtonOffset: '0px'
       };
 
@@ -22,9 +22,9 @@ class Nav extends React.Component {
       this.setState({navOpened: !this.state.navOpened});
 
       if(this.state.navOpened){
-        this.setState({navWidth: '0px', navButtonOffset: '0px'});
+        this.setState({navWidth: '0%', navButtonOffset: '0px'});
       } else {
-        this.setState({navWidth: '250px', navButtonOffset: '222px'});
+        this.setState({navWidth: '15%', navButtonOffset: '13.2%'});
       }
 
       return this.state.navOpened;

@@ -1,5 +1,6 @@
 .nav_container {
-  width: 100px;
+  float: left;
+  width: 10%;
 }
 
 .nav_button_wrapper {

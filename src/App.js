@@ -8,8 +8,9 @@ import Contact from './content/Contact.js';
 class App extends React.Component {
   render() {
     return(
+      <div className="app_container">
       <Router>
-      <div className="container">
+        <div className="router_container">
         <Nav/>
           <Switch>
             <Route exact path='/' component={Welcome} />
@@ -17,8 +18,9 @@ class App extends React.Component {
             <Route path='/contact' component={Contact} />
             <Route path='/the-site' component={About} />
           </Switch>
-      </div>
+          </div>
       </Router>
+      </div>
     );
   }
 }
