@@ -15,7 +15,7 @@ class Contact extends React.Component {
                   </tr>
                   <tr>
                       <td>Phone:</td>
-                      <td>(731) 608-7590</td>
+                      <td>(615) 917-9715</td>
                   </tr>
                   <tr>
                       <td>Social:</td>
