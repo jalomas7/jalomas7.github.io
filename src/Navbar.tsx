@@ -10,15 +10,17 @@ const NavbarContainer = styled.div`
     justify-content: end;
     gap: 1em;
     padding: 20px;
-}
 `
-
+const NavLink = styled(Link)`
+    color: white;
+    text-decoration: none;
+`
 export const Navbar: React.FunctionComponent = () => {
 
     return (
         <NavbarContainer>
-            <Link to='/'>Home</Link>
-            <Link to='/about'>About</Link>
+            <NavLink to='/'>Home</NavLink>
+            <NavLink to='/about'>About</NavLink>
         </NavbarContainer>
     );
 }
