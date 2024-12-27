@@ -3,9 +3,8 @@ import styled from '@emotion/styled'
 
 const NavbarContainer = styled.div`
     display: flex;
-    width: 100%;
     height: 1em;
-    background-color: #0090aa;
+    background-color: #2D6DAA;
     align-items: center;
     justify-content: end;
     gap: 1em;
