@@ -4,16 +4,23 @@ import { Home } from './Home';
 import { BrowserRouter, Route, Routes } from 'react-router';
 import { About } from './About';
 import { Navbar } from './Navbar';
+import styled from '@emotion/styled';
+
+
+const AppContainer = styled.div`
+`
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" Component={Home} />
-          <Route path="/about" Component={About} />
-        </Routes>
+        <AppContainer>
+          <Navbar />
+          <Routes>
+            <Route path="/" Component={Home} />
+            <Route path="/about" Component={About} />
+          </Routes>
+        </AppContainer>
       </BrowserRouter>
     </div>
   );
