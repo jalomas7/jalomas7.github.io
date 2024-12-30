@@ -24,7 +24,7 @@ export const About: React.FunctionComponent = () => {
                 <h1>About Me</h1>
             </div><br />
             <TextContainer>
-                I am a first generation college student from a small town in West
+                Hi, I'm Jacob! I am from a small town in West
                 Tennessee called Henderson. I first discovered my love for computers
                 and technology at a young age, playing video games and using
                 the family desktop. Growing up, my access to
@@ -38,7 +38,7 @@ export const About: React.FunctionComponent = () => {
                 pursue a bachelor's degree in Computer Science at the University of
                 Tennessee, Knoxville. Prior to my first day of class, I had
                 absolutely no experience programming. In college, I learned C/C++ first,
-                then moved on to scripting languages like python and Javascript<br />
+                then moved on to scripting languages like Python and Javascript<br />
 
                 After graduating, I moved to the Nashville Tennessee area and started working
                 for Asurion, one of the leading technology companies of middle Tennessee. At Asurion,

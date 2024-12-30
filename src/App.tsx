@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router';
 import { About } from './About';
 import { Navbar } from './Navbar';
 import styled from '@emotion/styled';
+import { Contact } from './Contact';
 
 
 const AppContainer = styled.div`
@@ -19,6 +20,7 @@ function App() {
           <Routes>
             <Route path="/" Component={Home} />
             <Route path="/about" Component={About} />
+            <Route path="/contact" Component={Contact} />
           </Routes>
         </AppContainer>
       </BrowserRouter>
