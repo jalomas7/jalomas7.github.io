@@ -18,9 +18,9 @@ export const Navbar: React.FunctionComponent = () => {
 
     return (
         <NavbarContainer>
-            <NavLink to='/'>Home</NavLink>
-            <NavLink to='/about'>About</NavLink>
-            <NavLink to='/contact'>Contact</NavLink>
+            <NavLink to='/' viewTransition>Home</NavLink>
+            <NavLink to='/about' viewTransition>About</NavLink>
+            <NavLink to='/contact' viewTransition>Contact</NavLink>
         </NavbarContainer>
     );
 }
