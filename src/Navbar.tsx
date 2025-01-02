@@ -29,11 +29,17 @@ const NavLink = styled(Link)`
 export const Navbar: React.FunctionComponent = () => {
     const location = useLocation();
 
+    const routes = [
+        { to: '/', name: 'Home' },
+        { to: '/about', name: 'About' },
+        { to: '/contact', name: 'Contact' }
+    ]
+
     return (
         <NavbarContainer>
-            <NavLink to='/' className={location.pathname === '/' ? 'active' : 'inactive'}>Home</NavLink>
-            <NavLink to='/about' className={location.pathname === '/about' ? 'active' : 'inactive'}>About</NavLink>
-            <NavLink to='/contact' className={location.pathname === '/contact' ? 'active' : 'inactive'}>Contact</NavLink>
+            {routes.map(route => {
+                return <NavLink to={route.to} className={location.pathname === route.to ? 'active' : 'inactive'} key={route.to}>{route.name}</NavLink>
+            })}
         </NavbarContainer>
     );
 }
