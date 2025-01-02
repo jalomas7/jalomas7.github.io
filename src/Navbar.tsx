@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link, useLocation } from "react-router";
 import styled from '@emotion/styled'
 
 const NavbarContainer = styled.div`
@@ -13,14 +13,27 @@ const NavbarContainer = styled.div`
 const NavLink = styled(Link)`
     color: white;
     text-decoration: none;
+    padding: 10px;
+
+    &:hover {
+        background-color: #5689C5;
+        border-radius: 20px;
+        transition: background-color 200ms ease-in-out;
+    }
+    
+    &.active {
+        background-color: #5689C5; 
+        border-radius: 20px;
+    }
 `
 export const Navbar: React.FunctionComponent = () => {
+    const location = useLocation();
 
     return (
         <NavbarContainer>
-            <NavLink to='/' viewTransition>Home</NavLink>
-            <NavLink to='/about' viewTransition>About</NavLink>
-            <NavLink to='/contact' viewTransition>Contact</NavLink>
+            <NavLink to='/' className={location.pathname === '/' ? 'active' : 'inactive'}>Home</NavLink>
+            <NavLink to='/about' className={location.pathname === '/about' ? 'active' : 'inactive'}>About</NavLink>
+            <NavLink to='/contact' className={location.pathname === '/contact' ? 'active' : 'inactive'}>Contact</NavLink>
         </NavbarContainer>
     );
 }
