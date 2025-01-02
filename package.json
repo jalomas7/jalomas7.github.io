@@ -1,6 +1,7 @@
 {
   "name": "jalomas7.github.io",
   "version": "0.1.0",
+  "homepage": "https://jalomas7.github.io/jalomas7.github.io",
   "private": true,
   "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447",
   "dependencies": {
@@ -22,6 +23,8 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -46,6 +49,7 @@
     ]
   },
   "devDependencies": {
-    "@types/react-transition-group": "^4.4.12"
+    "@types/react-transition-group": "^4.4.12",
+    "gh-pages": "^6.2.0"
   }
 }
