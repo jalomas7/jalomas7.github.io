@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/jalomas7.github.io/static/css/main.284ea47c.css",
+    "main.js": "/jalomas7.github.io/static/js/main.e970cc1e.js",
+    "static/js/453.e0c74af4.chunk.js": "/jalomas7.github.io/static/js/453.e0c74af4.chunk.js",
+    "static/media/Jacob_3.jpeg": "/jalomas7.github.io/static/media/Jacob_3.b9ee0fa916befaf0e72e.jpeg",
+    "index.html": "/jalomas7.github.io/index.html",
+    "main.284ea47c.css.map": "/jalomas7.github.io/static/css/main.284ea47c.css.map",
+    "main.e970cc1e.js.map": "/jalomas7.github.io/static/js/main.e970cc1e.js.map",
+    "453.e0c74af4.chunk.js.map": "/jalomas7.github.io/static/js/453.e0c74af4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.284ea47c.css",
+    "static/js/main.e970cc1e.js"
+  ]
+}
