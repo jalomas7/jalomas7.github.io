@@ -9,6 +9,7 @@ import { Contact } from './Contact';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import './animation.css';
 import background from './img/background.webp';
+import { Skills } from './Skills';
 
 
 const routes = [
@@ -20,6 +21,12 @@ const routes = [
     element: <Contact />,
     nodeRef: createRef(),
   },
+  {
+    path: '/skills',
+    name: 'Skills',
+    element: <Skills />,
+    nodeRef: createRef()
+  }
 ]
 
 const AppContainer = styled.div`

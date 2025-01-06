@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router';
+import '@coreui/coreui/dist/css/coreui.min.css';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

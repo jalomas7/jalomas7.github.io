@@ -32,6 +32,7 @@ export const Navbar: React.FunctionComponent = () => {
     const routes = [
         { to: '/', name: 'Home' },
         { to: '/about', name: 'About' },
+        { to: '/skills', name: 'Skills' },
         { to: '/contact', name: 'Contact' }
     ]
 
