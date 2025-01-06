@@ -8,6 +8,7 @@ import styled from '@emotion/styled';
 import { Contact } from './Contact';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import './animation.css';
+import background from './img/background.webp';
 
 
 const routes = [
@@ -22,6 +23,20 @@ const routes = [
 ]
 
 const AppContainer = styled.div`
+  background: url(${background});
+  height:100vh;
+  scrollbar-width: none;
+`
+
+const PageContainer = styled.div`
+  height: 94vh;
+  overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `
 
 function App() {
@@ -40,7 +55,7 @@ function App() {
             timeout={300}
             classNames="page"
           >
-            <div ref={nodeRef} className='page'>
+            <PageContainer ref={nodeRef} className='page'>
               <Routes>
                 {routes.map((route) => {
                   return (
@@ -48,7 +63,7 @@ function App() {
                   )
                 })}
               </Routes>
-            </div>
+            </PageContainer>
           </CSSTransition>
         </TransitionGroup>
       </AppContainer>
