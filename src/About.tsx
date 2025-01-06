@@ -16,6 +16,10 @@ const TextContainer = newStyled.p`
         display: block;
         content: "";
     }
+
+    @media screen and (max-width: 800px) {
+        padding: 20px;
+    }
 `;
 export const About: React.FunctionComponent = () => {
     return (

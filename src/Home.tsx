@@ -11,6 +11,10 @@ const Container = styled.div`
 const ProfilePicture = styled.img`
     height: 400px;
     border-radius: 25px;
+
+    @media screen and (max-width: 800px) {
+        height: 200px;
+    }
 `;
 
 const CaptionContainer = styled.p`
