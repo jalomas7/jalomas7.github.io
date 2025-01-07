@@ -37,6 +37,7 @@ const AppContainer = styled.div`
 
 const PageContainer = styled.div`
   height: 94vh;
+  padding: 20px;
   overflow: scroll;
   scrollbar-width: none;
   -ms-overflow-style: none;
