@@ -15,6 +15,10 @@ const Container = newStyled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (max-width: 1200px) {
+        min-width: 200px;
+    }
 `;
 
 const Card = newStyled(CCard)`
