@@ -11,21 +11,40 @@ type CollapsibleProps = {
 const Container = newStyled.div`
     overflow: hidden;
     min-height: 100px;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
 `;
 
 const Card = newStyled(CCard)`
-    max-width: 250px;
+    max-width: 300px;
+    background-color: #63A5E9;
 `
+
+const HeaderContainer = newStyled.div`
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 30px;
+`;
+
+const ArrowContainer = newStyled.div<{ open: boolean }>`
+    transform: rotate(${props => props.open ? '90deg' : '0deg'});
+    transition: transform 300ms linear;
+`;
 
 export const Collapsible: React.FunctionComponent<CollapsibleProps> = ({ className, header, children }) => {
     const [open, setOpen] = useState(false);
 
     return (
         <Container className={className} onClick={() => setOpen(!open)}>
-            {header}
+            <HeaderContainer>
+                <ArrowContainer open={open}>
+                    ➤
+                </ArrowContainer>
+                {header}
+            </HeaderContainer>
             <CCollapse visible={open}>
                 <Card>
                     <CCardBody>
