@@ -1,5 +1,5 @@
 import React from "react";
-import { Collapsible } from "./Collapsible";
+import { Collapsible } from "../lib/Collapsible";
 import newStyled from "@emotion/styled";
 
 const SkillsList = newStyled.ul`

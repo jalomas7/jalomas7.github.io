@@ -6,7 +6,7 @@ export const Contact: React.FunctionComponent = () => {
             <h1>Contact me:</h1>
             <div>
                 <p>Phone: 615-917-9715</p>
-                <p>Email: <a>jacobmassengill10@gmail.com</a></p>
+                <p>Email: jacobmassengill10@gmail.com</p>
             </div>
         </div>
     )

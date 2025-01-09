@@ -1,15 +1,14 @@
 import React, { createRef, RefObject } from 'react';
-import './App.css';
-import { Home } from './Home';
-import { Route, Routes, useLocation, useOutlet, useViewTransitionState } from 'react-router';
-import { About } from './About';
-import { Navbar } from './Navbar';
+import { Home } from './pages/Home';
+import { Route, Routes, useLocation } from 'react-router';
+import { About } from './pages/About';
+import { Navbar } from './lib/Navbar';
 import styled from '@emotion/styled';
-import { Contact } from './Contact';
+import { Contact } from './pages/Contact';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import './animation.css';
 import background from './img/background.webp';
-import { Skills } from './Skills';
+import { Skills } from './pages/Skills';
 
 
 const routes = [

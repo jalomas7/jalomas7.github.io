@@ -1,8 +1,8 @@
 import React from "react";
-import jacob_1 from './img/Jacob_1.jpeg';
-import jacob_2 from './img/Jacob_2.jpeg';
-import jacob_3 from './img/Jacob_3.jpeg';
-import jacob_4 from './img/Jacob_4.jpeg';
+import jacob_1 from '../img/Jacob_1.jpeg';
+import jacob_2 from '../img/Jacob_2.jpeg';
+import jacob_3 from '../img/Jacob_3.jpeg';
+import jacob_4 from '../img/Jacob_4.jpeg';
 import styled from '@emotion/styled';
 import { CCarousel, CCarouselItem } from "@coreui/react";
 
