@@ -17,9 +17,14 @@ const SkillsContainer = newStyled.div`
     }
 `;
 
+const Container = newStyled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`
 export const Skills: React.FunctionComponent = () => {
     return (
-        <div>
+        <Container>
             <h1>Skills</h1>
             <SkillsContainer>
                 <Collapsible header='Expert'>
@@ -71,6 +76,6 @@ export const Skills: React.FunctionComponent = () => {
                     </SkillsList>
                 </Collapsible>
             </SkillsContainer>
-        </div>
+        </ Container>
     )
 }

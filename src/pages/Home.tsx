@@ -24,6 +24,7 @@ const ProfilePicture = styled.img`
 const CaptionContainer = styled.p`
     font-size: 25px;
     max-width: 18em;
+    text-align: center;
 `
 
 export const Home: React.FunctionComponent = () => {
