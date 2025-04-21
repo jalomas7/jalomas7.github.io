@@ -9,6 +9,7 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import './animation.css';
 import background from './img/background.webp';
 import { Skills } from './pages/Skills';
+import { Portfolio } from './pages/Portfolio';
 
 
 const routes = [
@@ -24,6 +25,12 @@ const routes = [
     path: '/skills',
     name: 'Skills',
     element: <Skills />,
+    nodeRef: createRef()
+  },
+  {
+    path: '/portfolio',
+    name: 'Portfolio',
+    element: <Portfolio />,
     nodeRef: createRef()
   }
 ]

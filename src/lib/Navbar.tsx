@@ -33,7 +33,8 @@ export const Navbar: React.FunctionComponent = () => {
         { to: '/', name: 'Home' },
         { to: '/about', name: 'About' },
         { to: '/skills', name: 'Skills' },
-        { to: '/contact', name: 'Contact' }
+        { to: '/portfolio', name: 'Portfolio' },
+        { to: '/contact', name: 'Contact' },
     ]
 
     return (
