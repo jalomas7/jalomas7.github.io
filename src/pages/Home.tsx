@@ -35,13 +35,13 @@ export const Home: React.FunctionComponent = () => {
             </div><br />
             <CCarousel controls interval={false}>
                 <CCarouselItem>
-                    <ProfilePicture src={jacob_3} alt="Jacob" />
+                    <ProfilePicture src={jacob_1} alt="Jacob" />
                 </CCarouselItem>
                 <CCarouselItem>
                     <ProfilePicture src={jacob_2} alt="Jacob" />
                 </CCarouselItem>
                 <CCarouselItem>
-                    <ProfilePicture src={jacob_1} alt="Jacob" />
+                    <ProfilePicture src={jacob_3} alt="Jacob" />
                 </CCarouselItem>
                 <CCarouselItem>
                     <ProfilePicture src={jacob_4} alt="Jacob" />
