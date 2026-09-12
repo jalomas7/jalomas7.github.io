@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router';
+import { ThemeToggle } from './ThemeToggle';
 
 export const Navbar: React.FC = () => (
   <header className="site-header">
@@ -10,5 +11,6 @@ export const Navbar: React.FC = () => (
       <NavLink to="/skills">Skills</NavLink>
       <NavLink to="/contact">Contact <span aria-hidden="true">↗</span></NavLink>
     </nav>
+    <ThemeToggle />
   </header>
 );
