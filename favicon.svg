@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Jacob Massengill JM monogram</title>
+  <rect width="64" height="64" rx="10" fill="#245ac6"/>
+  <g fill="none" stroke="#fff" stroke-width="5" stroke-linecap="square" stroke-linejoin="round">
+    <path d="M13 19H25V39Q25 46 18 46Q11 46 11 39"/>
+    <path d="M36 46V19L44 32L52 19V46"/>
+  </g>
+</svg>
