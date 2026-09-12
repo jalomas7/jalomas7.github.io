@@ -1,78 +1,19 @@
-import newStyled from "@emotion/styled"
+import React from 'react';
+import { Link } from 'react-router';
+import portrait from '../img/Jacob_1.jpeg';
 
-const Container = newStyled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-`
-
-const TextContainer = newStyled.p`
-    max-width: 30em;
-    text-align: left;
-    font-size: 1.5em;
-
-     br {
-        margin: 20px; 
-        display: block;
-        content: "";
-    }
-
-    @media screen and (max-width: 800px) {
-        padding: 20px;
-    }
-`;
-export const About: React.FunctionComponent = () => {
-    return (
-        <Container className="main_content">
-            <div className="header_container">
-                <h1>About Me</h1>
-            </div><br />
-            <TextContainer>
-                Hi, I'm Jacob! I am from a small town in West
-                Tennessee called Henderson. I first discovered my love for computers
-                and technology at a young age, playing video games and using
-                the family desktop. Growing up, my access to
-                the internet was limited to my time at school, so almost the
-                entirety of my computer knowledge comprised of self taught
-                trial-and-error. I was fascinated by how computers were so
-                prevelant in everyday life, and strived to learn as much as I could
-                about them. <br />
-
-                My fascination with computers culminated when I made the decision to
-                pursue a bachelor's degree in Computer Science at the University of
-                Tennessee, Knoxville. Prior to my first day of class, I had
-                absolutely no experience programming. In college, I learned C/C++ first,
-                then moved on to scripting languages like Python and Javascript<br />
-
-                After graduating, I moved to the Nashville Tennessee area and started working
-                for Asurion, one of the leading technology companies of middle Tennessee. At Asurion,
-                I learned what it means to be a true software engineer. It was no longer just
-                about coding projects, but working on a team to create meaningful products.<br />
-
-                During my time at Asurion, I worked hands on in various code bases, but I
-                became most familiar with React and Typescript. I used these and other tools to build
-                things such as a survey application to replace our costly existing application. I also
-                built a site designed to help customers optimize and replace their phone batteries.
-                <br />
-
-                During my tenure at Asurion, I gained valuable leadership skills. I was selected to be
-                a mentor for the prestigious Software Engineering Apprenticeship Program. This program
-                was the first of it's kind in Tennessee, where employees outside the technology space at
-                Asurion were given the opportunity to become software engineers. I taught a student who knew
-                nothing about software engineering or programming. Within 12 months, she was hired as a
-                full time software engineer at Asurion. <br />
-
-                My time at Asurion culminated on a team tasked with figuring out how to replace customers'
-                broken technology. I served as technical leader on this team for 3 years, where I managed
-                10 other engineers as we built this tool. I represented my team's engineers at meetings and
-                demonstrations as well as guided the technical decisions for the app itself.
-                <br />
-
-                The majority of my experience is in web development. I have 7 years experience with React, Typescript,
-                and Node.js. I consider myself a full stack engineer as I am comfortable working on the front-end as well
-                as the back-end. I enjoy front-end development especially as it blends my love for programming and art,
-                and I enjoy collaborating with designers to bring their vision to life.
-            </TextContainer>
-        </Container>
-    )
-}
+export const About: React.FC = () => (
+  <>
+    <section className="page-intro"><p className="eyebrow">The person behind the work</p><h1>Curiosity brought me here.</h1><p>I'm Jacob—a full-stack engineer who enjoys the space where programming, art, and teamwork meet.</p></section>
+    <div className="biography-layout">
+      <figure className="portrait"><img src={portrait} alt="Jacob Massengill smiling in a navy suit" width="374" height="512" /><figcaption>Jacob Massengill / Software engineer</figcaption></figure>
+      <div className="prose">
+        <section><h2>From Henderson to Knoxville.</h2><p>I grew up in Henderson, a small town in West Tennessee. Video games and the family desktop sparked my interest in computers. With internet access mostly limited to school, I learned through self-taught trial and error.</p><p>That curiosity led me to a bachelor's degree in Computer Science at the University of Tennessee, Knoxville. I arrived without programming experience, learned C and C++ first, and then moved into Python and JavaScript.</p></section>
+        <section><h2>Learning to build together.</h2><p>After graduating, I moved to the Nashville area and joined Asurion. There, I learned that software engineering means more than writing code: it means working with a team to create meaningful products.</p><p>I became especially familiar with React and TypeScript. My work included a survey application to replace an existing paid tool, a site to help customers optimize and replace phone batteries, and the customer device replacement experience.</p></section>
+        <section><h2>Helping others grow.</h2><p>As a mentor in Asurion's Software Engineering Apprenticeship Program, I taught an apprentice who began without programming experience. Within twelve months, she was hired as a full-time software engineer.</p><p>I also served as technical leader for three years on a team building tools to replace customers' broken technology. I guided ten other engineers, represented the team in meetings and demonstrations, and helped shape the application's technical decisions.</p></section>
+        <section><h2>What I’m working on now.</h2><p>I’m currently at CoStar, working to integrate AI into CoStar’s hospitality data analytics product.</p></section>
+        <section><h2>Where design meets engineering.</h2><p>My experience spans front-end and back-end development with React, TypeScript, and Node.js. I particularly enjoy front-end work because it brings together my love of programming and art, and gives me the chance to collaborate with designers to bring their vision to life.</p><div className="actions"><Link className="button" to="/portfolio">Explore my work <span aria-hidden="true">↗</span></Link><Link className="text-link" to="/skills">My toolkit <span aria-hidden="true">↗</span></Link></div></section>
+      </div>
+    </div>
+  </>
+);

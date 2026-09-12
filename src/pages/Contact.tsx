@@ -1,53 +1,14 @@
-import newStyled from "@emotion/styled"
-import React from "react"
+import React from 'react';
 
-const Container = newStyled.div`
-    text-align: center;
-
-    form {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-
-        button {
-            max-width: 200px;
-            min-width: 150px;
-            align-self: center;
-            background-color: #2D6DAA;
-            color: white;
-            border: none;
-            border-radius: 30px;
-            min-height: 50px;
-
-            &:active {
-                background-color:rgb(26, 64, 99);
-            }
-        }
-    }
-`
-
-export const Contact: React.FunctionComponent = () => {
-    return (
-        <Container>
-            <div className="container">
-                <h1>Contact Me</h1>
-                <form target="_blank" action="https://formsubmit.co/3b669ebf25a4eb39db6ad01283edba11" method="POST">
-                    <div className="form-group">
-                        <div className="form-row">
-                            <div className="col">
-                                <input type="text" name="name" className="form-control" placeholder="Full Name" required />
-                            </div>
-                            <div className="col">
-                                <input type="email" name="email" className="form-control" placeholder="Email Address" required />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="form-group">
-                        <textarea placeholder="Your Message" className="form-control" name="message" rows={10} required></textarea>
-                    </div>
-                    <button type="submit">Submit Form</button>
-                </form>
-            </div>
-        </Container>
-    )
-}
+export const Contact: React.FC = () => (
+  <>
+    <section className="page-intro"><p className="eyebrow">Start a conversation</p><h1>Let's build something useful.</h1><p>Have a project in mind, a question, or just want to connect? I'd love to hear from you.</p></section>
+    <div className="contact-layout"><div><h2>Say hello.</h2><p className="muted">Tell me a little about yourself and what you're thinking.</p></div>
+      <form className="contact-form" action="https://formsubmit.co/3b669ebf25a4eb39db6ad01283edba11" method="POST">
+        <div className="form-row"><label htmlFor="contact-name">Your name<input id="contact-name" name="name" type="text" autoComplete="name" required /></label><label htmlFor="contact-email">Email address<input id="contact-email" name="email" type="email" autoComplete="email" required /></label></div>
+        <label htmlFor="contact-message">Your message<textarea id="contact-message" name="message" rows={7} required /></label>
+        <div className="form-submit"><button className="button" type="submit">Send message <span aria-hidden="true">↗</span></button><p>All fields are required.</p></div>
+      </form>
+    </div>
+  </>
+);

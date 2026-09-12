@@ -1,81 +1,14 @@
-import React from "react";
-import { Collapsible } from "../lib/Collapsible";
-import newStyled from "@emotion/styled";
-
-const SkillsList = newStyled.ul`
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-`
-
-const SkillsContainer = newStyled.div`
-    display: flex;
-    justify-content: space-evenly;
-
-    @media screen and (max-width: 800px) {
-        flex-direction: column;
-    }
-`;
-
-const Container = newStyled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-`
-export const Skills: React.FunctionComponent = () => {
-    return (
-        <Container>
-            <h1>Skills</h1>
-            <SkillsContainer>
-                <Collapsible header='Expert'>
-                    <SkillsList>
-                        <li>Typescript, Javascript, NodeJS</li>
-                        <li>HTML and CSS</li>
-                        <li>React with Context API</li>
-                        <li>Git</li>
-                        <li>Responsive Design</li>
-                        <li>REST APIs</li>
-                        <li>Front-end development</li>
-                        <li>Back-end development</li>
-                        <li>Creative problem solving</li>
-                        <li>Unit testing with Jest</li>
-                        <li>Agile methodology</li>
-                    </SkillsList>
-                </Collapsible>
-                <Collapsible header='Proficient'>
-                    <SkillsList>
-                        <li>Serverless</li>
-                        <li>AWS Services</li>
-                        <li>Infrastructure development</li>
-                        <li>Relational Databases</li>
-                        <li>NoSQL Databases</li>
-                        <li>Analytics Services</li>
-                        <li>E2E testing</li>
-                        <li>Styled components</li>
-                        <li>SPA design</li>
-                    </SkillsList>
-                </Collapsible>
-                <Collapsible header='Familiar'>
-                    <SkillsList>
-                        <li>Mobile development with React Native</li>
-                        <li>Authentication and Authorization</li>
-                        <li>CI/CD</li>
-                        <li>Docker</li>
-                        <li>Webpack</li>
-                    </SkillsList>
-                </Collapsible>
-                <Collapsible header='Soft Skills'>
-                    <SkillsList>
-                        <li>People management</li>
-                        <li>Code review</li>
-                        <li>Documentation</li>
-                        <li>Conflict resolution</li>
-                        <li>Continuous learning</li>
-                        <li>Communication</li>
-                        <li>Mentoring</li>
-                    </SkillsList>
-                </Collapsible>
-            </SkillsContainer>
-        </ Container>
-    )
-}
+import React from 'react';
+const groups = [
+  { title: 'Expert', items: ['TypeScript, JavaScript, Node.js', 'HTML and CSS', 'React with Context API', 'Git', 'Responsive design', 'REST APIs', 'Front-end development', 'AI-Assisted Development', 'Creative problem solving', 'Unit testing with Jest', 'Agile methodology'] },
+  { title: 'Proficient', items: ['Back-end development', 'Serverless', 'AWS services', 'Infrastructure development', 'Relational databases', 'NoSQL databases', 'Analytics services', 'End-to-end testing', 'Styled components', 'Single-page application design'] },
+  { title: 'Familiar', items: ['Mobile development with React Native', 'Authentication and authorization', 'CI/CD', 'Docker', 'Webpack'] },
+  { title: 'Working with people', items: ['People management', 'Code review', 'Documentation', 'Conflict resolution', 'Continuous learning', 'Communication', 'Mentoring'] },
+  { title: 'Currently Learning', items: ['C# .NET services', 'AI Product Integration'] },
+];
+export const Skills: React.FC = () => (
+  <>
+    <section className="page-intro"><p className="eyebrow">Tools + practice</p><h1>Across the stack.<br />Alongside a team.</h1><p>The technologies and skills I bring to building products, solving problems, and helping engineers grow.</p></section>
+    <div className="skills-grid">{groups.map((group, index) => <section className="skill-group" key={group.title}><p className="eyebrow">0{index + 1} / Capabilities</p><h2>{group.title}</h2><ul>{group.items.map(item => <li key={item}>{item}</li>)}</ul></section>)}</div>
+  </>
+);
