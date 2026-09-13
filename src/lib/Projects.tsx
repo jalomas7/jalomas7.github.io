@@ -1,3 +1,4 @@
+import { ArrowUpRight } from './ArrowUpRight';
 import React from 'react';
 
 const projects = [
@@ -18,7 +19,7 @@ export const Projects: React.FC<{ detailed?: boolean; featured?: boolean }> = ({
         <p className="eyebrow">0{index + 1} / {project.category}</p>
         <h3>{project.name}</h3>
         <p className="project-description">{project.description}</p>
-        <a className="text-link" href={project.href} target="_blank" rel="noopener noreferrer">{project.action}<span aria-hidden="true"> ↗</span><span className="sr-only"> (opens in a new tab)</span></a>
+        <a className="text-link" href={project.href} target="_blank" rel="noopener noreferrer">{project.action}<ArrowUpRight /><span className="sr-only"> (opens in a new tab)</span></a>
         {project.tags && <p className="project-tags">{project.tags}</p>}
         {detailed && project.note && <p className="project-note">{project.note}</p>}
       </article>

@@ -1,3 +1,4 @@
+import { ArrowUpRight } from '../lib/ArrowUpRight';
 import React from 'react';
 import { Projects } from '../lib/Projects';
 
@@ -11,7 +12,7 @@ export const Portfolio: React.FC = () => (
         <article className="project">
           <p className="eyebrow">Under construction</p>
           <h3>Pantheon Labs</h3>
-          <a className="text-link" href="https://pantheonlab.dev/" target="_blank" rel="noopener noreferrer">Visit Pantheon Labs <span aria-hidden="true">↗</span><span className="sr-only"> (opens in a new tab)</span></a>
+          <a className="text-link" href="https://pantheonlab.dev/" target="_blank" rel="noopener noreferrer">Visit Pantheon Labs <ArrowUpRight /><span className="sr-only"> (opens in a new tab)</span></a>
         </article>
       </div>
     </section>

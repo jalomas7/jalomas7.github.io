@@ -1,3 +1,4 @@
+import { ArrowUpRight } from './ArrowUpRight';
 import React from 'react';
 import { Link, NavLink } from 'react-router';
 import { ThemeToggle } from './ThemeToggle';
@@ -9,7 +10,7 @@ export const Navbar: React.FC = () => (
       <NavLink to="/portfolio">Work</NavLink>
       <NavLink to="/about">About</NavLink>
       <NavLink to="/skills">Skills</NavLink>
-      <NavLink to="/contact">Contact <span aria-hidden="true">↗</span></NavLink>
+      <NavLink to="/contact">Contact <ArrowUpRight /></NavLink>
     </nav>
     <ThemeToggle />
   </header>

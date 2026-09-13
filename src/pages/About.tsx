@@ -1,3 +1,4 @@
+import { ArrowUpRight } from '../lib/ArrowUpRight';
 import React from 'react';
 import { Link } from 'react-router';
 import portrait from '../img/Jacob_1.jpeg';
@@ -12,7 +13,7 @@ export const About: React.FC = () => (
         <section><h2>Learning to build together.</h2><p>After graduating, I moved to the Nashville area and joined Asurion. There, I learned that software engineering means more than writing code: it means working with a team to create meaningful products.</p><p>I became especially familiar with React and TypeScript. My work included a survey application to replace an existing paid tool, a site to help customers optimize and replace phone batteries, and the customer device replacement experience.</p></section>
         <section><h2>Helping others grow.</h2><p>As a mentor in Asurion's Software Engineering Apprenticeship Program, I taught an apprentice who began without programming experience. Within twelve months, she was hired as a full-time software engineer.</p><p>I also served as technical leader for three years on a team building tools to replace customers' broken technology. I guided ten other engineers, represented the team in meetings and demonstrations, and helped shape the application's technical decisions.</p></section>
         <section><h2>What I’m working on now.</h2><p>I’m currently at CoStar, working to integrate AI into CoStar’s hospitality data analytics product.</p></section>
-        <section><h2>Where design meets engineering.</h2><p>My experience spans front-end and back-end development with React, TypeScript, and Node.js. I particularly enjoy front-end work because it brings together my love of programming and art, and gives me the chance to collaborate with designers to bring their vision to life.</p><div className="actions"><Link className="button" to="/portfolio">Explore my work <span aria-hidden="true">↗</span></Link><Link className="text-link" to="/skills">My toolkit <span aria-hidden="true">↗</span></Link></div></section>
+        <section><h2>Where design meets engineering.</h2><p>My experience spans front-end and back-end development with React, TypeScript, and Node.js. I particularly enjoy front-end work because it brings together my love of programming and art, and gives me the chance to collaborate with designers to bring their vision to life.</p><div className="actions"><Link className="button" to="/portfolio">Explore my work <ArrowUpRight /></Link><Link className="text-link" to="/skills">My toolkit <ArrowUpRight /></Link></div></section>
       </div>
     </div>
   </>

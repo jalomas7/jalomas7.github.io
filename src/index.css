@@ -72,6 +72,7 @@ h3 { font-size: 1.5rem; line-height: 1.25; letter-spacing: -.03em; }
 .button { display: inline-flex; align-items: center; justify-content: center; gap: 12px; min-height: 48px; padding: 13px 22px; background: var(--blue); color: var(--button-text); border: 1px solid var(--blue); border-radius: 3px; font-size: 14px; cursor: pointer; transition: background-color 160ms ease; }
 .button:hover { background: var(--blue-hover); border-color: var(--blue-hover); text-decoration: none; }
 .text-link { display: inline-flex; align-items: center; min-height: 44px; gap: 6px; font-size: 14px; color: var(--ink); }
+.arrow-up-right { flex-shrink: 0; }
 .expertise { list-style: none; display: flex; flex-wrap: wrap; gap: 16px 36px; margin: 0; padding: 22px 0; border-block: 1px solid var(--line); font-size: 13px; color: var(--muted); }
 .work-section { padding: 56px 0 64px; scroll-margin-top: 24px; }
 .section-heading { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; margin-bottom: 28px; }

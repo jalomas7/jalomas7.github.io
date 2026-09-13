@@ -1,3 +1,4 @@
+import { ArrowUpRight } from './lib/ArrowUpRight';
 import React, { useEffect, useRef } from 'react';
 import { Link, Route, Routes, useLocation } from 'react-router';
 import { Home } from './pages/Home';
@@ -38,7 +39,7 @@ function App() {
       <footer className="site-footer">
         <Link className="footer-name" to="/">Jacob Massengill</Link>
         <p>Thoughtful code. Useful things.</p>
-        <nav aria-label="Footer navigation"><Link to="/skills">Skills</Link><Link to="/contact">Let's talk <span aria-hidden="true">↗</span></Link></nav>
+        <nav aria-label="Footer navigation"><Link to="/skills">Skills</Link><Link to="/contact">Let's talk <ArrowUpRight /></Link></nav>
       </footer>
     </div>
   );
